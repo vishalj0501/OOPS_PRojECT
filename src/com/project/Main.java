@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 
 public class Main {
-    //jishnu das author
+
     public static void main(String[] args) throws IOException {
         System.out.println("Welcome to Mathematics Online Courses");
         System.out.println("Are you a Student?\n(Yes/No)");
@@ -13,22 +13,23 @@ public class Main {
         final Scanner sc = new Scanner(System.in);
             String UserInput, Yes, No;
             UserInput = sc.nextLine();
-
-            if (UserInput.equals("Yes")) {
+            
+            if (UserInput.equalsIgnoreCase("yes")) {
                 System.out.println("Please Login");
               //  Login.log();
-                System.out.println(Login.log());
-                System.out.println(AvailableCourses.courses());
+                if(Login.log()) {
+               	 AvailableCourses.courses();
+               	 
+                } 
 
             }
             //
 
-            else if  (UserInput.equals("No")){
+            else if  (UserInput.equals("No") ||UserInput.equals("NO")||UserInput.equals("no")||UserInput.equals("nO")){
                 System.out.println("Please Sign-up");
                 System.out.println(SignUp.Register());
         }
 
 
     }
-
 }
