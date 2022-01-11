@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Login {
 
-    public static String log() {
+    public static boolean log() {
         Scanner s= new Scanner(System.in);
 
         String Username, Password;
@@ -13,10 +13,12 @@ Username=s.nextLine();
         System.out.println("Enter your Password : ");
 Password=s.nextLine();
 if (Username.equals("Rolls") || (Password.equals("Royce"))){
-    return "Welcome Royce ! ";
+	 System.out.println( "Welcome" + Username);
+	 return true;
 }
 else{
-    return "Incorrect Username or Password";
+     System.out.println( "Incorrect"  + Username + " plz enter a valid username");
+     return false;
 }
     }
 }

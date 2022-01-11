@@ -25,7 +25,7 @@ public class Main {
             }
             //
 
-            else if  (UserInput.equals("No") ||UserInput.equals("NO")||UserInput.equals("no")||UserInput.equals("nO")){
+            else if  (UserInput.equalsIgnoreCase("no")){
                 System.out.println("Please Sign-up");
                 System.out.println(SignUp.Register());
         }
