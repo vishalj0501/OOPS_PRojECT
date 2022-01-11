@@ -1,0 +1,10 @@
+Algebra is the concept based on unknown values called variables.
+The important concept of algebra is equations.
+It follows various rules to perform arithmetic operations.
+The rules are used to make sense of sets of data that involve two or more variables.
+It is used to analyse many things around us.
+You will probably use the concept of algebra without realising it.
+Algebra is divided into different sub-branches such as elementary algebra,
+advanced algebra, abstract algebra, linear algebra, and commutative algebra.
+
+ In this course,You will be exposed to various aspects of Linear Algebra such as
