@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 
 public class Main {
-
+    //jishnu das author
     public static void main(String[] args) throws IOException {
         System.out.println("Welcome to Mathematics Online Courses");
         System.out.println("Are you a Student?\n(Yes/No)");
