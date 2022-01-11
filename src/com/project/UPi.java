@@ -12,7 +12,7 @@ public class UPi  {
         Scanner up= new Scanner(System.in);
 
         String payChoice=up.nextLine();
-        if(payChoice.equals("A") || payChoice.equals("B") ){
+        if(payChoice.equalsIgnoreCase("A") || payChoice.equalsIgnoreCase("B") ){
             BuyCourse.buycourse();
         }
        // return "";

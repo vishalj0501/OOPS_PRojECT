@@ -18,16 +18,19 @@ public static String buycourse(){
 
         String UserPurchase = buy.nextLine();
 
-    if(UserPurchase.equals("Algebra")) {
+    if(UserPurchase.equalsIgnoreCase("Algebra")) {
         System.out.println("Course Price : $2000/month ");
         System.out.println("Are you willing to purchase this course ? ");
         //   String Yes,No;
 
         String BuyChoice = buy.nextLine();
 //String Password=buy.nextLine();
-        if (BuyChoice.equals("Yes")) {
+        if (BuyChoice.equalsIgnoreCase("Yes")) {
+
             // System.out.println(UPi.upipay());
+
             System.out.println("Enter your password Paytm : ");
+
             String Password = buy.nextLine();
             if (Password.equals("****")){
                 System.out.println("$2000 has been deducted from your wallet ! ");
@@ -38,9 +41,21 @@ public static String buycourse(){
                     algfile.close();
                 } catch (IOException e) {
                     e.printStackTrace();
-                }
+                }//System.out.println();
+System.out.println("Are you willing to take a test on Algebra");
+String TestChoice=buy.nextLine();
+//hallo cant hear me?
+if(TestChoice.equalsIgnoreCase("yes")){
+    quiz.algebratest();
+}
 
-            } else if (BuyChoice.equals("No")) {
+
+
+
+
+
+
+            } else if (BuyChoice.equalsIgnoreCase("No")) {
                 System.out.println("Thank You for considering us.");
             }
 
@@ -50,14 +65,14 @@ public static String buycourse(){
     }
    //////////////////////////////////////////////////////////////////////////////////////////////////////
 
-       else if(UserPurchase.equals("Trigonometry")){
+       else if(UserPurchase.equalsIgnoreCase("Trigonometry")){
             System.out.println("Course Price : $1000/month ");
             System.out.println("Are you willing to purchase this course ? ");
             //   String Yes,No;
 
             String BuyChoice= buy.nextLine();
 
-            if( BuyChoice.equals("Yes"))
+            if( BuyChoice.equalsIgnoreCase("Yes"))
             {
                 try {
                     FileWriter trigofile = new FileWriter("TrigoMaterial.txt");
@@ -69,7 +84,7 @@ public static String buycourse(){
                 }
 
             }
-            else if(BuyChoice.equals("No")) {
+            else if(BuyChoice.equalsIgnoreCase("No")) {
                 System.out.println("Thank You for considering us.");
             }
 
@@ -77,14 +92,14 @@ public static String buycourse(){
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
-       else if(UserPurchase.equals("Coordinate_Geometry")){
+       else if(UserPurchase.equalsIgnoreCase("Coordinate_Geometry")){
             System.out.println("Course Price : $3000/month ");
             System.out.println("Are you willing to purchase this course ? ");
             //   String Yes,No;
 
             String BuyChoice= buy.nextLine();
 
-            if( BuyChoice.equals("Yes")){
+            if( BuyChoice.equalsIgnoreCase("Yes")){
                 try {
                     FileWriter Coordinatefile = new FileWriter("CoordinateGeometryMaterial.txt");
                     Coordinatefile.write("We need to put in the links here,,cccccccccgggggggggg...");      // in the MEET
@@ -95,21 +110,21 @@ public static String buycourse(){
                 }
 
             }
-            else if(BuyChoice.equals("No")) {
+            else if(BuyChoice.equalsIgnoreCase("No")) {
                 System.out.println("Thank You for considering us.");
             }
 
         }
        /////////////////////////////////////////////////////////////////////////////////////////////////
 
-        else if(UserPurchase.equals("Calculus")){
+        else if(UserPurchase.equalsIgnoreCase("Calculus")){
             System.out.println("Course Price : $5000/month ");
             System.out.println("Are you willing to purchase this course ? ");
             //   String Yes,No;
 
             String BuyChoice= buy.nextLine();
 
-            if(BuyChoice.equals("Yes")){
+            if(BuyChoice.equalsIgnoreCase("Yes")){
                 try {
                     FileWriter calfile = new FileWriter("CalculusMaterial.txt");
                     calfile.write("We need to put in the links here,,..calculus.");      // in the MEET
@@ -120,7 +135,7 @@ public static String buycourse(){
                 }
 
             }
-            else if(BuyChoice.equals("No")) {
+            else if(BuyChoice.equalsIgnoreCase("No")) {
                 System.out.println("Thank You for considering us.");
             }
 

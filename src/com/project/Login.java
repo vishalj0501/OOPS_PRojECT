@@ -3,11 +3,12 @@ package com.project;
 import java.util.Scanner;
 
 public class Login {
-
+	//String Username, Password;
     public static boolean log() {
-        Scanner s= new Scanner(System.in);
+    	String Username, Password;
+    	Scanner s= new Scanner(System.in);
 
-        String Username, Password;
+        
         System.out.println("Enter your Name To Login : ");
 Username=s.nextLine();
         System.out.println("Enter your Password : ");

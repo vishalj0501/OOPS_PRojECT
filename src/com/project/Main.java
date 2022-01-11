@@ -19,6 +19,9 @@ public class Main {
               //  Login.log();
                 if(Login.log()) {
                	 AvailableCourses.courses();
+               	 //quiz.sysout(Username)
+               	 //if()
+               		// quiz.sysout();
                	 
                 } 
 

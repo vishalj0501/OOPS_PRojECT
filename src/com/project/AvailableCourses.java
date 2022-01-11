@@ -26,10 +26,11 @@ public class AvailableCourses {
     if(Choice.equals("Algebra")){
 
         File alge = new File("/Users/vishu/IdeaProjects/OOPS PRojECT/src/com/project/Algebra.txt");
+        
 
 try {
 
-    Scanner rd1= new Scanner(alge);
+    Scanner rd1= new Scanner(alge);//
 
     while (rd1.hasNextLine()){         //rd=read
 
